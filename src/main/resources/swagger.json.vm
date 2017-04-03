@@ -1,0 +1,47 @@
+{
+  "paths": {
+    "/*": {
+      "post": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "description": "SOAP request.",
+            "name": "SOAP Request",
+            "required": true,
+            "in": "body"
+          },
+          {
+            "description": "SOAPAction header for soap 1.1",
+            "name": "SOAPAction",
+            "type": "string",
+            "required": false,
+            "in": "header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "x-auth-type": "Application \u0026 Application User",
+        "x-throttling-tier": "Unlimited"
+      }
+    }
+  },
+  "swagger": "2.0",
+  "consumes": [
+    "text/xml",
+    "application/soap+xml"
+  ],
+  "produces": [
+    "text/xml",
+    "application/soap+xml"
+  ],
+  "info": {
+    "title": "$name",
+    "version": "$version",
+    "description": "$description"
+  }
+}
