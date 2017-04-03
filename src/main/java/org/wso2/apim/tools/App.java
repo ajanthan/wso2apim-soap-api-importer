@@ -110,7 +110,7 @@ public class App {
         try {
             swaggerWriter.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            printDebugLog(e, debug);
         }
         System.out.println("Successfully generated swagger.json");
         File wsdlDir = new File(zipDir.getAbsolutePath() + File.separator + "WSDL");
