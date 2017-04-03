@@ -1,5 +1,5 @@
 # wso2apim-soap-api-importer
-A command line utility to generate importable API definition for WSO2 APIM
+A command line utility to generate importable SOAP API definition for WSO2 APIM from a WSDL file.
 
 ## Build Instruction
  `mvn clean install`
